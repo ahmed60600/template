@@ -45,6 +45,7 @@ body{
     justify-content: space-between;
     align-items: center;
     position: relative;
+    min-height: 78.8px;
 }
 header .container::after{
     content: "";
@@ -64,23 +65,43 @@ header nav {
     justify-content: flex-end;
     
 }
+header nav .toggle-mune{
+    position: relative;
+    color: white;
+    font-size: 22px;
+    top: 3px;
+}
+header nav .toggle-mune:hover + ul{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    padding: 15px;
+    left: 0;
+    width: 100%;
+    margin-top: 50px;
+}
+@media (min-width: 768px){
+    header nav .toggle-mune{
+        display: none;
+    }
+}
 header nav ul {
     display: flex;
+}
+@media(max-width: 767px){
+    header nav ul{
+        display: none;
+    }
 }
 header nav ul li a{
     text-decoration: none;
     font-size: 15px;
     display:block;
     color:white;
-    transition:;
     text-decoration: none;
     padding: 30px 20px;
     position: relative;
     z-index: 3;
-    -webkit-transition:;
-    -moz-transition:;
-    -ms-transition:;
-    -o-transition:;
 }
 header nav ul li a:hover,
 header nav ul li a.active{
@@ -93,7 +114,11 @@ header nav .form {
     height: 30px;
     margin-left: 30px;
     border-left: 1px solid white;
-    top: 25px;
+}
+@media(min-width: 768px){
+    header nav .form{
+        top: 25px;
+    }
 }
 header nav .form i{
     color: white;
