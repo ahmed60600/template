@@ -16,7 +16,6 @@ ul{
 }
 body{
     font-family: 'Open Sans', sans-serif;
-    background-color: black;
 }
 .container{
     padding-left:15px;
@@ -40,6 +39,49 @@ body{
     }
 }
 /* end global rules */
+/* start componetons */
+.section{
+    padding: 100px;
+}
+.main-heading{
+    text-align: center;
+}
+.main-heading h2{
+    margin-bottom: 70px;
+    font-weight: normal;
+    font-size: 40px;
+    text-transform: uppercase;
+    position: relative;
+}
+.main-heading h2::before{
+    content: "";
+    width: 130px;
+    height: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    background-color: #333;
+    bottom: -30px;
+}
+.main-heading h2::after{
+    content: "";
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid;
+    border-color: #333;
+    bottom: -38px;
+    background-color: white;
+}
+.main-heading p{
+    color: #777;
+    width: 550px;
+    margin: 0 auto 100px;
+}
+/* end componetons */
 /* start header */
 header{
     position: absolute;
