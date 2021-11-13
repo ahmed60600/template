@@ -465,7 +465,7 @@ overflow: hidden;
         flex-basis: 25%;
     }
     .portfolio .imags-container .box img{
-        height: 260px;
+        height: 330px;
     }
 }
 .portfolio .imags-container .box:hover .cabtion{
@@ -605,7 +605,7 @@ bottom: 0;
 }
 @media (min-width: 1290px){
     .stats .box-container{
-        width: 75%;
+        width: 60%;
     }
 }
 .stats .box-container {
